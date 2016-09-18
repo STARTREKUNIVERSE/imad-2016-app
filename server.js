@@ -4,22 +4,38 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articleone={
-    title: 'Article one | startrekuniverse',
-    heading:'Article one',
-    date: 'sep 18,2016',
-    content:` 
-    <p>
-              This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.
+var articles=
+{
+    
+        articleone:{
+        title: 'Article one | startrekuniverse',
+        heading:'Article one',
+        date: 'sep 18,2016',
+        content:
+        `<  p>
+        This is the content for the first article.
+        </p>
+         `}
+              
+        articletwo:{
+        title: 'Article one | startrekuniverse',
+        heading:'Article one',
+        date: 'sep 18,2016',
+        content:` 
+            <p>
+              This is the content for the first article.
           </p>
-          <p>
-              This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.
-          </p>
-          <p>
-              This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.
-          </p>
-          <p>
-              This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.This is the content for the first article.`
+          `}
+              
+        articlethree:{
+        title: 'Article one | startrekuniverse',
+        heading:'Article one',
+        date: 'sep 18,2016',
+        content:`<p>
+        This is the content for the first article.
+        </p>
+          `}
+    
     
 };
 function createtemplate (data){
